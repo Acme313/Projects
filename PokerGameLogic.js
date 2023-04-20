@@ -55,8 +55,8 @@ const isStraightFlush = (data) => isFlush(data) && isStraight(sortHand(data))
 const isRoyalFlush = (data) => isStraightFlush(sortHand(data)) && data.join('').includes('A')
 
 // Sämtliche Beispiele zum testen:
-console.log(toName("9♣")) // => "9" 
-console.log(toName("10♥")) // => "10" 
+console.log(toName("9♣")) 
+console.log(toName("10♥")) 
 console.log(toName("Q♥")) // => "Q" 
 console.log(toSuit("9♣")) // => "♣" 
 console.log(toSuit("10♥")) // => "♥"
